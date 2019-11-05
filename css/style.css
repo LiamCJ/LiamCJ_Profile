@@ -207,6 +207,7 @@ body.dark .bl-main>section:nth-child(4).bl-expand .contact .leftside{
 }
 
 body.dark .resume-list-item:not(.is-active) .resume-list-item-inner,
+body.dark .skill-list-item:not(.is-active) .skill-list-item-inner,
 body.dark div.bl-panel-items>div.bl-show-work,
 body.dark div.bl-panel-items>div,
 body.dark .bl-main>section:nth-child(4),
@@ -258,9 +259,11 @@ body.dark .resume-container {
   border-bottom: 1px solid #333;
 }
 
-body.dark .resume-list-item {
+body.dark .resume-list-item,
+body.dark .skill-list-item {
   background: rgba(255, 255, 255, 0.1) !important;
 }
+
 
 body.dark .resume-card-header {
   border-bottom: 1px solid #333;
@@ -271,7 +274,8 @@ body.dark .resume-card {
   border: 1px solid #333;
 }
 
-body.dark .resume-list-item:not(.is-active):hover {
+body.dark .resume-list-item:not(.is-active):hover,
+body.dark .skill-list-item:not(.is-active):hover {
   background: rgba(255, 255, 255, 0.15) !important;
 }
 
@@ -283,7 +287,8 @@ body.dark .divider .outer-line {
   border-bottom: 1px solid #666;
 }
 
-body.dark .resume-list-item-title {
+body.dark .resume-list-item-title,
+body.dark .skill-list-item-title {
   color: #888;
 }
 
@@ -990,7 +995,8 @@ span.separator {
   margin-bottom: 24px;
 }
 
-.resume-list {
+.resume-list,
+.skill-list {
   width: 100%;
 }
 
@@ -1003,40 +1009,58 @@ span.separator {
   transition: box-shadow .3s ease;
 }
 
-.resume-list-item {
+.skill-list-item {
+  margin: 24px 0;
+  padding: 30px;
+  padding: 1px;
+  cursor: pointer;
+  user-select: none;
+  transition: box-shadow .3s ease;
+  margin-left: 50px
+}
+
+.resume-list-item,
+.skill-list-item {
   background: rgba(0, 0, 0, 0.1) !important;
   box-shadow: none;
 }
 
-.resume-list-item:not(.is-active) .resume-list-item-inner {
+.resume-list-item:not(.is-active) .resume-list-item-inner,
+.skill-list-item:not(.is-active) .skill-list-item-inner {
   background: #fff;
 }
 
+.resume-list-item:not(.is-active):hover,
 .resume-list-item:not(.is-active):hover {
   background: rgba(0, 0, 0, 0.15) !important;
 }
 
-.resume-list-item-inner {
+.resume-list-item-inner,
+.skill-list-item-inner {
   display: flex;
   padding: 24px;
   align-items: center;
   font-size: 20px;
 }
 
-.resume-list-item.is-active {
+.resume-list-item.is-active,
+.skill-list-item.is-active {
   background: none !important;
 }
 
-.resume-list-item.is-active .resume-list-item-title {
+.resume-list-item.is-active .resume-list-item-title,
+.skill-list-item.is-active .skill-list-item-title {
   color: #fff;
   font-weight: 600;
 }
 
-.resume-list-item-title {
+.resume-list-item-title,
+.skill-list-item-title {
   margin: 0;
 }
 
-.resume-list-item-title i {
+.resume-list-item-title i,
+.skill-list-item-title i {
   padding-right: 13px;
 }
 
@@ -2048,15 +2072,18 @@ body.blog .pagination li a i {
     margin-bottom: 0;
   }
 
-  .resume-list {
+  .resume-list,
+  .skill-list {
     max-width: 300px;
   }
 
-  .resume-list {
+  .resume-list,
+  .skill-list {
     display: none;
   }
 
-  .resume-list-item-inner {
+  .resume-list-item-inner,
+  .skill-list-item-inner, {
     padding-top: 23px !important;
     padding: 20px !important;
   }
@@ -2344,6 +2371,7 @@ body.blog .btn.back-homepage:hover,
 .personal-info a.btn,
 span.separator,
 .resume-list-item-inner,
+.skill-list-item-inner,
 .carousel .indicators .indicator-item.active,
 #bl-work-items>div a div,
 div.bl-panel-items a.btn,

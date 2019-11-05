@@ -249,10 +249,6 @@ var Boxlayout = (function() {
             }
 
             $nextPanel.addClass('bl-show-work');
-            $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-            if (video.paused !== true && video.ended !== true) {
-                video.pause();
-            }
             return false;
 
         });
@@ -264,10 +260,6 @@ var Boxlayout = (function() {
             $sectionWork.removeClass('bl-scale-down');
             $workPanelsContainer.removeClass('bl-panel-items-show');
             $workPanels.eq(currentWorkPanel).removeClass('bl-show-work');
-            if (video.paused !== true && video.ended !== true) {
-                video.pause();
-            }
-            $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
             return false;
 
         });

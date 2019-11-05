@@ -72,6 +72,19 @@
             });
         }
 
+         // RESUME CARDS ANIMATION
+        if ($(window).width() > 800) {
+            $(".skill-list-item, .resume-card").on("click", function() {
+                $(".skill-list-item").removeClass("is-active");
+                var e = parseInt($(this).data("index"), 10);
+                $("#skill-list-item-" + e).addClass("is-active");
+                var t = e + 1,
+                    n = e - 1,
+                    i = e - 2;
+                $(".resume-card").removeClass("front back up-front up-up-front back-back"), $(".resume-card-" + e).addClass("front"), $(".resume-card-" + t).addClass("back"), $(".resume-card-" + n).addClass("back-back"), $(".resume-card-" + i).addClass("back")
+            });
+        }
+
     });
 
 })(jQuery);
