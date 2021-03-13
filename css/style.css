@@ -2493,20 +2493,26 @@ fieldset[disabled] .soc-linkedin.focus {
     background-color: #444;
     border-color: rgba(0, 0, 0, 0.2);
     width: 800px;
-    margin-left: 25px
+    margin-left: 25px;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .soc-github:focus,
 .soc-github.focus {
     color: #fff;
     background-color: #2b2b2b;
-    border-color: rgba(0, 0, 0, 0.2)
+    border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .soc-github:hover {
     color: #fff;
     background-color: #2b2b2b;
-    border-color: rgba(0, 0, 0, 0.2)
+    border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .soc-github:active,
@@ -2514,7 +2520,9 @@ fieldset[disabled] .soc-linkedin.focus {
 .open>.dropdown-toggle.soc-github {
     color: #fff;
     background-color: #2b2b2b;
-    border-color: rgba(0, 0, 0, 0.2)
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .soc-github:active:hover,
